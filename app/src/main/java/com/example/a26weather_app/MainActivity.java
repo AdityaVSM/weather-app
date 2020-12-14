@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             DownloadJson task = new DownloadJson();
             String encodedName =  URLEncoder.encode( editText.getText().toString(),"UTF-8");
-            task.execute("https://api.openweathermap.org/data/2.5/weather?q=" +encodedName+ "&appid=f62312887aeceeece315fa9df3587ae8").get();
+            task.execute("https://api.openweathermap.org/data/2.5/weather?q=" +encodedName+ "&appid=352d91a9bea0eb1eb77c5132e98d3fdc").get();
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(MainActivity.this, "Could not get city weather :(", Toast.LENGTH_SHORT).show();
